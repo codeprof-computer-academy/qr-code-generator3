@@ -1,0 +1,191 @@
+@media(max-width:450px){
+
+  header{
+      
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+ nav{
+    position: absolute;
+    top:60px;
+    left:-300px;
+    background-color: rgb(201, 77, 5);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: calc(100vh - 100px);
+    padding: 40px 30px;
+    gap:35px;
+    transition: 0.5s;
+ }
+
+ nav a{
+    color:rgba(255,255,255,0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+ }
+
+ nav a:hover{
+    color:white;
+ }
+
+ nav a img{
+    transition: 0.5s;
+ }
+
+ nav a:hover img{
+    transform: scale(1.4);
+ }
+
+ .menu-btn{
+    width: 25px;
+    height: 25px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    background-image: url("./images/menu.png");
+    background-size: cover;
+    background-position: center center;
+ }
+
+
+ main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 15px;
+    gap:20px;
+ }
+
+
+ .qr-form{
+     width: 100%;
+     height: 160px;
+     background-color: white;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap:15px;
+ }
+
+ .qr-form input{
+   width: 100%;
+   padding: 15px;
+   border:1px solid grey;
+   outline: none;
+   border-radius: 5px;
+   font-size: 18px;
+
+ }
+
+ .qr-form input:focus{
+    border-color: rgb(201, 77, 5);
+ }
+
+
+ .qr-form button{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(201, 77, 5);
+    color:white;
+    border:1px solid rgb(201, 77, 5);
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+
+
+ .qr-form button:hover{
+    background-color: black;
+    border-color: black;
+ }
+
+
+ .result{
+    width: 100%;
+    height: 0;
+    padding: 0px;
+    overflow-y: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1s;
+
+ }
+
+ .qr-image{
+    width: 70%;
+    object-fit: contain;
+
+ }
+
+ .download-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: whitesmoke;
+    background-image: url("./images/download.png");
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    transition: 0.5s;
+
+ }
+
+ .download-btn:hover{
+    transform: scale(1.2);
+    filter:grayscale(1)
+ }
+ footer{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ footer p{
+    font-size: 10px;
+ }
+
+/* utility class */
+
+.show-nav{
+    left:0px;
+}
+
+.change-menu-btn-bg{
+    background-image: url("./images/close_btn.png");
+    background-size: cover;
+    transform: rotate(360deg);
+}
+
+.show-result{
+    height: calc(100vh - 160px);
+    padding: 20px;
+}
+
+}
+
+
